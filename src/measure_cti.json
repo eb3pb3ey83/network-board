@@ -1,0 +1,108 @@
+{
+  "object_no": "ba001",
+  "style": {
+      "internal_color": "#009E6F",
+      "external_color": "#AEF3CE",
+      "measure_button": true,
+      "percent": false,
+      "progress_bar": false
+  },
+  "status": "1",
+  "value": "正常",
+  "data": [
+      {
+          "type": "col-info",
+          "object_no": "bc006",
+          "style": {},
+          "data": {
+              "title": "CM狀態",
+              "value": "Online",
+              "status": null
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "bc007",
+          "style": {
+              "color": "#DD060E"
+          },
+          "data": {
+              "title": "CM設定檔",
+              "value": "CM300M50M.cm",
+              "status": 3
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "bc008",
+          "style": {},
+          "data": {
+              "title": "Wi-Fi 2.4G狀態",
+              "value": "開啟",
+              "status": null
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "bc009",
+          "style": {},
+          "data": {
+              "title": "無線SSID 2.4G",
+              "value": "Testasas",
+              "status": null
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "bc010",
+          "style": {},
+          "data": {
+              "title": "Wi-Fi 5G狀態",
+              "value": "-",
+              "status": null
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "bc011",
+          "style": {},
+          "data": {
+              "title": "無線SSID 5G",
+              "value": "-",
+              "status": null
+          }
+      },
+      {
+          "type": "col-info-2",
+          "object_no": "bc012",
+          "style": {},
+          "data": {
+              "title": "CPE IP位址",
+              "value": [
+                  "180.218.5.108(固定)"
+              ],
+              "status": null,
+              "separator": "、"
+          }
+      },
+      {
+          "type": "col-info-2",
+          "object_no": "bc013",
+          "style": {},
+          "data": {
+              "title": "固定IP位址",
+              "value": [
+                  "180.218.5.108 "
+              ]
+          }
+      }
+  ],
+  "suggestion": {
+      "list_data": [
+          {
+              "title": "速率不吻合",
+              "value": "請先確認用戶是否促案升/降頻，若無促案請按立即開通。"
+          }
+      ]
+  }
+}

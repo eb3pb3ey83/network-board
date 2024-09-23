@@ -1,0 +1,740 @@
+{
+    "company_name": "永佳樂",
+    "company_background_color": "#C7F4FE",
+    "company_font_color": "#212B36",
+    "layout_data": {
+        "has_float": false,
+        "float_box": {},
+        "frames": [
+            {
+                "id": 1,
+                "expand": false,
+                "col_span": 1,
+                "open_num": 1,
+                "show_num": 6,
+                "header": {
+                    "display": false
+                },
+                "content_box": [
+                    {
+                        "data": {
+                            "title": "即時線路品質",
+                            "value": "",
+                            "status": 4
+                        },
+                        "type": "signal-info",
+                        "style": {
+                            "percent": false,
+                            "progress_bar": false,
+                            "external_color": "#E5E8EB",
+                            "internal_color": "#B0B9C2",
+                            "measure_button": true
+                        },
+                        "object_no": "ab001",
+                        "id": 1
+                    },
+                    {
+                        "data": {},
+                        "type": "line",
+                        "style": {},
+                        "object_no": "aa000",
+                        "id": 2
+                    },
+                    {
+                        "type": "signal-info",
+                        "object_no": "ab002",
+                        "style": {
+                            "internal_color": "#009E6F",
+                            "external_color": "#AEF3CE",
+                            "measure_button": false,
+                            "percent": false,
+                            "progress_bar": false
+                        },
+                        "data": {
+                            "title": "昨日線路品質",
+                            "value": "良好",
+                            "status": "1"
+                        },
+                        "id": 3
+                    },
+                    {
+                        "data": {},
+                        "type": "line",
+                        "style": {},
+                        "object_no": "aa000",
+                        "id": 4
+                    },
+                    {
+                        "type": "signal-info",
+                        "object_no": "ab003",
+                        "style": {
+                            "internal_color": "#009E6F",
+                            "external_color": "#AEF3CE",
+                            "measure_button": false,
+                            "percent": false,
+                            "progress_bar": false
+                        },
+                        "data": {
+                            "title": "近7日線路品質",
+                            "value": "良好",
+                            "status": "1"
+                        },
+                        "id": 5
+                    }
+                ],
+                "footer": {
+                    "display": false
+                }
+            },
+            {
+                "id": 2,
+                "expand": false,
+                "col_span": 1,
+                "open_num": 1,
+                "show_num": 6,
+                "header": {
+                    "display": false
+                },
+                "content_box": [
+                    {
+                        "data": {
+                            "value": "家戶Wi-Fi品質"
+                        },
+                        "type": "title",
+                        "style": {
+                            "color": true
+                        },
+                        "object_no": "aa001",
+                        "id": 6
+                    },
+                    {
+                        "type": "signal-info",
+                        "object_no": "af002",
+                        "style": {
+                            "internal_color": "#B0B9C2",
+                            "external_color": "#E5E8EB",
+                            "measure_button": false,
+                            "percent": false,
+                            "progress_bar": false
+                        },
+                        "data": {
+                            "title": "昨日家戶Wi-Fi品質",
+                            "value": "-",
+                            "status": 4
+                        },
+                        "id": 7
+                    },
+                    {
+                        "data": {},
+                        "type": "line",
+                        "style": {},
+                        "object_no": "aa000",
+                        "id": 8
+                    },
+                    {
+                        "type": "signal-info",
+                        "object_no": "af003",
+                        "style": {
+                            "internal_color": "#B0B9C2",
+                            "external_color": "#E5E8EB",
+                            "measure_button": false,
+                            "percent": false,
+                            "progress_bar": false
+                        },
+                        "data": {
+                            "title": "近一週家戶Wi-Fi品質",
+                            "value": "-",
+                            "status": 4
+                        },
+                        "id": 9
+                    }
+                ],
+                "footer": {
+                    "display": false
+                }
+            },
+            {
+                "id": 3,
+                "expand": true,
+                "col_span": 1,
+                "open_num": 1,
+                "show_num": 6,
+                "header": {
+                    "display": false
+                },
+                "content_box": [
+                    {
+                        "data": {
+                            "value": "訂戶資訊"
+                        },
+                        "type": "title",
+                        "style": {
+                            "color": true
+                        },
+                        "object_no": "aa001",
+                        "id": 10
+                    },
+                    {
+                        "type": "user-info",
+                        "object_no": "aa002",
+                        "style": {},
+                        "data": {
+                            "name": "羅*嬌",
+                            "address": "新北市泰山區明志路三段231巷",
+                            "subsid": "471301"
+                        },
+                        "id": 11
+                    },
+                    {
+                        "type": "col-info",
+                        "object_no": "aa003",
+                        "style": {},
+                        "data": {
+                            "title": "訂戶狀態",
+                            "value": "服務正常"
+                        },
+                        "id": 12
+                    },
+                    {
+                        "type": "col-info",
+                        "object_no": "aa004",
+                        "style": {},
+                        "data": {
+                            "title": "我的速率",
+                            "value": "24M/5M"
+                        },
+                        "id": 13
+                    }
+                ],
+                "footer": {
+                    "display": false
+                }
+            },
+            {
+                "id": 4,
+                "expand": false,
+                "col_span": 1,
+                "open_num": 1,
+                "show_num": 6,
+                "header": {
+                    "display": false
+                },
+                "content_box": [
+                    {
+                        "data": {
+                            "value": "自助服務"
+                        },
+                        "type": "title",
+                        "style": {
+                            "color": true
+                        },
+                        "object_no": "aa001",
+                        "id": 14
+                    },
+                    {
+                        "type": "link-info-icon",
+                        "object_no": "ac002",
+                        "style": {
+                            "icon": "repair"
+                        },
+                        "data": {
+                            "title": "線上排除/報修",
+                            "value": null,
+                            "status": null,
+                            "url": null
+                        },
+                        "id": 15
+                    },
+                    {
+                        "type": "link-info-icon",
+                        "object_no": "ac003",
+                        "style": {
+                            "icon": "maintain"
+                        },
+                        "data": {
+                            "title": "維修進度查詢",
+                            "value": null,
+                            "status": null,
+                            "url": null
+                        },
+                        "id": 16
+                    },
+                    {
+                        "type": "link-info-icon",
+                        "object_no": "ac004",
+                        "style": {
+                            "icon": "faq"
+                        },
+                        "data": {
+                            "title": "常見問題",
+                            "value": null,
+                            "status": null,
+                            "url": null
+                        },
+                        "id": 17
+                    }
+                ],
+                "footer": {
+                    "display": false
+                }
+            },
+            {
+                "id": 5,
+                "expand": false,
+                "col_span": 1,
+                "open_num": 1,
+                "show_num": 6,
+                "header": {
+                    "display": false
+                },
+                "content_box": [
+                    {
+                        "type": "title-more",
+                        "object_no": "ae001",
+                        "style": {
+                            "color": true
+                        },
+                        "data": {
+                            "type": null,
+                            "value": "近期帳單費用",
+                            "target": null,
+                            "url": null
+                        },
+                        "id": 18
+                    },
+                    {
+                        "type": "row-info-bill",
+                        "object_no": "ae002",
+                        "style": {},
+                        "data": {
+                            "list_data": {}
+                        },
+                        "id": 19
+                    }
+                ],
+                "footer": {
+                    "display": false
+                }
+            },
+            {
+                "id": 6,
+                "expand": false,
+                "col_span": 1,
+                "open_num": 1,
+                "show_num": 6,
+                "header": {
+                    "display": false
+                },
+                "content_box": [
+                    {
+                        "type": "title-more",
+                        "object_no": "ad001",
+                        "style": {
+                            "color": true
+                        },
+                        "data": {
+                            "type": null,
+                            "value": "近期繳費記錄",
+                            "target": null,
+                            "url": null
+                        },
+                        "id": 20
+                    },
+                    {
+                        "type": "row-info-date",
+                        "object_no": "ad002",
+                        "style": {},
+                        "data": {
+                            "list_data": [
+                                {
+                                    "id": "ad002_0",
+                                    "title": [
+                                        "2024/09/05",
+                                        ""
+                                    ],
+                                    "value": "$368",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ad002_1",
+                                    "title": [
+                                        "2024/08/05",
+                                        ""
+                                    ],
+                                    "value": "$368",
+                                    "status": null,
+                                    "url": null
+                                }
+                            ]
+                        },
+                        "id": 21
+                    }
+                ],
+                "footer": {
+                    "display": false
+                }
+            },
+            {
+                "id": 7,
+                "expand": false,
+                "col_span": 1,
+                "open_num": 1,
+                "show_num": 6,
+                "header": {
+                    "display": false
+                },
+                "content_box": [
+                    {
+                        "type": "title-more",
+                        "object_no": "ag001",
+                        "style": {
+                            "color": true
+                        },
+                        "data": {
+                            "type": null,
+                            "value": "近期發票明細",
+                            "target": null,
+                            "url": null
+                        },
+                        "id": 22
+                    },
+                    {
+                        "type": "row-info-invoice",
+                        "object_no": "ag002",
+                        "style": {},
+                        "data": {
+                            "list_data": [
+                                {
+                                    "id": "ag002_0",
+                                    "title": [
+                                        "EY16965538",
+                                        "2024/09/10"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_1",
+                                    "title": [
+                                        "FC46372417",
+                                        "2024/09/10"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_2",
+                                    "title": [
+                                        "FC46372418",
+                                        "2024/09/10"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_3",
+                                    "title": [
+                                        "DD46435738",
+                                        "2024/08/08"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_4",
+                                    "title": [
+                                        "DD46435739",
+                                        "2024/08/08"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_5",
+                                    "title": [
+                                        "CZ17011372",
+                                        "2024/08/08"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_6",
+                                    "title": [
+                                        "BE46436515",
+                                        "2024/06/07"
+                                    ],
+                                    "value": "$138",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_7",
+                                    "title": [
+                                        "BE46372601",
+                                        "2024/05/08"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_8",
+                                    "title": [
+                                        "BE46372602",
+                                        "2024/05/08"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_9",
+                                    "title": [
+                                        "AZ16966196",
+                                        "2024/05/08"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_10",
+                                    "title": [
+                                        "ZE46432947",
+                                        "2024/04/09"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_11",
+                                    "title": [
+                                        "ZE46432948",
+                                        "2024/04/09"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_12",
+                                    "title": [
+                                        "ZA17009245",
+                                        "2024/04/09"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_13",
+                                    "title": [
+                                        "ZE46367672",
+                                        "2024/03/08"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_14",
+                                    "title": [
+                                        "ZE46367673",
+                                        "2024/03/08"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_15",
+                                    "title": [
+                                        "ZA16962701",
+                                        "2024/03/08"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_16",
+                                    "title": [
+                                        "XB17014339",
+                                        "2024/02/16"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_17",
+                                    "title": [
+                                        "XF46440292",
+                                        "2024/02/16"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_18",
+                                    "title": [
+                                        "XF46440293",
+                                        "2024/02/16"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_19",
+                                    "title": [
+                                        "XF46370479",
+                                        "2024/01/09"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_20",
+                                    "title": [
+                                        "XF46370480",
+                                        "2024/01/09"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_21",
+                                    "title": [
+                                        "XB16964517",
+                                        "2024/01/09"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_22",
+                                    "title": [
+                                        "XF46367016",
+                                        "2024/01/09"
+                                    ],
+                                    "value": "$3000",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_23",
+                                    "title": [
+                                        "UZ41378530",
+                                        "2023/12/07"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_24",
+                                    "title": [
+                                        "UK26970555",
+                                        "2023/12/07"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_25",
+                                    "title": [
+                                        "UK26970556",
+                                        "2023/12/07"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_26",
+                                    "title": [
+                                        "UK26914008",
+                                        "2023/11/09"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_27",
+                                    "title": [
+                                        "UK26914009",
+                                        "2023/11/09"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_28",
+                                    "title": [
+                                        "UZ41333599",
+                                        "2023/11/09"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_29",
+                                    "title": [
+                                        "SZ41377682",
+                                        "2023/10/11"
+                                    ],
+                                    "value": "$238",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_30",
+                                    "title": [
+                                        "SK26972037",
+                                        "2023/10/11"
+                                    ],
+                                    "value": "$69",
+                                    "status": null,
+                                    "url": null
+                                },
+                                {
+                                    "id": "ag002_31",
+                                    "title": [
+                                        "SK26972038",
+                                        "2023/10/11"
+                                    ],
+                                    "value": "$61",
+                                    "status": null,
+                                    "url": null
+                                }
+                            ]
+                        },
+                        "id": 23
+                    }
+                ],
+                "footer": {
+                    "display": false
+                }
+            }
+        ],
+        "notice": {}
+    }
+}

@@ -1,0 +1,57 @@
+{
+  "object_no": "cb001",
+  "style": {
+      "internal_color": "#009E6F",
+      "external_color": "#AEF3CE",
+      "measure_button": true,
+      "percent": false,
+      "progress_bar": false
+  },
+  "status": "1",
+  "value": "正常",
+  "data": [
+      {
+          "type": "col-info",
+          "object_no": "ce004",
+          "style": {
+              "color": "#DD060E"
+          },
+          "data": {
+              "title": "CM設定檔",
+              "value": "CM300M50M.cm",
+              "status": "3"
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "ce005",
+          "style": {},
+          "data": {
+              "title": "建物類型",
+              "value": "個別住宅"
+          }
+      },
+      {
+          "type": "col-info-2",
+          "object_no": "ce006",
+          "style": {},
+          "data": {
+              "title": "Mesh-AP資訊",
+              "value": "-",
+              "separator": "、"
+          }
+      },
+      {
+          "type": "col-info-2",
+          "object_no": "ce007",
+          "style": {},
+          "data": {
+              "title": "設備型號",
+              "value": "仲琦 CGNF-II 3.0"
+          }
+      }
+  ],
+  "suggestion": {
+      "list_data": {}
+  }
+}

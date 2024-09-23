@@ -1,0 +1,679 @@
+{
+  "company_name": "永佳樂",
+  "company_background_color": "#C7F4FE",
+  "company_font_color": "#212B36",
+  "layout_data": {
+      "has_float": true,
+      "float_box": [
+          {
+              "id": 29,
+              "expand": true,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "訂戶資訊"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true
+                      },
+                      "object_no": "aa001",
+                      "id": 1
+                  },
+                  {
+                      "type": "user-info",
+                      "object_no": "bc002",
+                      "style": {},
+                      "data": {
+                          "name": "羅燕嬌",
+                          "address": "新北市泰山區明志路三段231巷4弄7號4樓",
+                          "subsid": "471301"
+                      },
+                      "id": 2
+                  },
+                  {
+                      "type": "user-tag",
+                      "object_no": "bc003",
+                      "style": {},
+                      "data": {
+                          "list_data": {}
+                      },
+                      "id": 3
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "bc004",
+                      "style": {},
+                      "data": {
+                          "title": "訂戶狀態",
+                          "value": "1 正常"
+                      },
+                      "id": 4
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "bc005",
+                      "style": {},
+                      "data": {
+                          "title": "主週期項",
+                          "value": "220240 連線費24M/5M"
+                      },
+                      "id": 5
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 6
+                  },
+                  {
+                      "data": {
+                          "title": "CM狀態"
+                      },
+                      "type": "col-info",
+                      "style": {},
+                      "object_no": "bc006",
+                      "id": 7
+                  },
+                  {
+                      "data": {
+                          "title": "CM設定檔"
+                      },
+                      "type": "col-info",
+                      "style": {},
+                      "object_no": "bc007",
+                      "id": 8
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 9
+                  },
+                  {
+                      "data": {
+                          "title": "Wi-Fi 2.4G狀態"
+                      },
+                      "type": "col-info",
+                      "style": {},
+                      "object_no": "bc008",
+                      "id": 10
+                  },
+                  {
+                      "data": {
+                          "title": "無線SSID 2.4G"
+                      },
+                      "type": "col-info",
+                      "style": {},
+                      "object_no": "bc009",
+                      "id": 11
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 12
+                  },
+                  {
+                      "data": {
+                          "title": "Wi-Fi 5G狀態"
+                      },
+                      "type": "col-info",
+                      "style": {},
+                      "object_no": "bc010",
+                      "id": 13
+                  },
+                  {
+                      "data": {
+                          "title": "無線SSID 5G"
+                      },
+                      "type": "col-info",
+                      "style": {},
+                      "object_no": "bc011",
+                      "id": 14
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 15
+                  },
+                  {
+                      "data": {
+                          "title": "CPE IP位址"
+                      },
+                      "type": "col-info-2",
+                      "style": {},
+                      "object_no": "bc012",
+                      "id": 16
+                  },
+                  {
+                      "data": {
+                          "title": "固定IP位址"
+                      },
+                      "type": "col-info-2",
+                      "style": {},
+                      "object_no": "bc013",
+                      "id": 17
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          }
+      ],
+      "frames": [
+          {
+              "id": 30,
+              "expand": false,
+              "col_span": 2,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "建議處置"
+                      },
+                      "type": "title",
+                      "style": {
+                          "icon": "Alert_Triangle_Stroke",
+                          "color": true
+                      },
+                      "object_no": "aa001",
+                      "id": 41
+                  },
+                  {
+                      "type": "advice-info-group",
+                      "object_no": "bd002",
+                      "style": {},
+                      "data": {
+                          "list_data": {}
+                      },
+                      "id": 42
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 31,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "title": "即時CM品質",
+                          "value": "",
+                          "status": 4
+                      },
+                      "type": "signal-info",
+                      "style": {
+                          "percent": false,
+                          "progress_bar": false,
+                          "external_color": "#E5E8EB",
+                          "internal_color": "#B0B9C2",
+                          "measure_button": true
+                      },
+                      "object_no": "ba001",
+                      "id": 20
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 21
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "ba002",
+                      "style": {
+                          "internal_color": "#009E6F",
+                          "external_color": "#AEF3CE",
+                          "measure_button": false,
+                          "percent": false,
+                          "progress_bar": false
+                      },
+                      "data": {
+                          "title": "昨日CM品質",
+                          "value": "良好",
+                          "status": "1"
+                      },
+                      "id": 22
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 23
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "ba003",
+                      "style": {
+                          "internal_color": "#009E6F",
+                          "external_color": "#AEF3CE",
+                          "measure_button": false,
+                          "percent": false,
+                          "progress_bar": false
+                      },
+                      "data": {
+                          "title": "近7日CM品質",
+                          "value": "良好",
+                          "status": "1"
+                      },
+                      "id": 24
+                  }
+              ],
+              "footer": {
+                  "display": true,
+                  "object_no": "bh001",
+                  "style": {},
+                  "data": {
+                      "title": "常用功能",
+                      "type": "link",
+                      "target": "_blank",
+                      "value": "https://cniseng.kbro.com.tw/portal/cmts/cm_measure.php?ver=eng&CompanyNo=101&SubsID=471301"
+                  }
+              }
+          },
+          {
+              "id": 32,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "家戶Wi-Fi品質"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true
+                      },
+                      "object_no": "aa001",
+                      "id": 25
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "bb002",
+                      "style": {
+                          "internal_color": "#B0B9C2",
+                          "external_color": "#E5E8EB",
+                          "measure_button": false,
+                          "percent": false,
+                          "progress_bar": false
+                      },
+                      "data": {
+                          "title": "昨日家戶Wi-Fi品質",
+                          "value": "-",
+                          "status": 4
+                      },
+                      "id": 26
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 27
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "bb003",
+                      "style": {
+                          "internal_color": "#B0B9C2",
+                          "external_color": "#E5E8EB",
+                          "measure_button": false,
+                          "percent": false,
+                          "progress_bar": false
+                      },
+                      "data": {
+                          "title": "近一週家戶Wi-Fi品質",
+                          "value": "-",
+                          "status": 4
+                      },
+                      "id": 28
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 29
+                  },
+                  {
+                      "data": {
+                          "value": "Mesh品質"
+                      },
+                      "type": "sub-title",
+                      "style": {
+                          "color": false,
+                          "padding_top": true
+                      },
+                      "object_no": "ba000",
+                      "id": 30
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "bb004",
+                      "style": {},
+                      "data": {
+                          "title": "不佳次數(昨日)",
+                          "value": "0次",
+                          "status": null
+                      },
+                      "id": 31
+                  },
+                  {
+                      "data": {
+                          "value": "用戶流量"
+                      },
+                      "type": "sub-title",
+                      "style": {
+                          "color": false
+                      },
+                      "object_no": "ba000",
+                      "id": 32
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "bb005",
+                      "style": {},
+                      "data": {
+                          "title": "上行超標數",
+                          "value": "超標0次",
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 33
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "bb006",
+                      "style": {},
+                      "data": {
+                          "title": "Session超標數",
+                          "value": "超標0次",
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 34
+                  }
+              ],
+              "footer": {
+                  "data": {},
+                  "style": {},
+                  "display": false
+              }
+          },
+          {
+              "id": 33,
+              "expand": false,
+              "col_span": 2,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "title-more",
+                      "object_no": "be001",
+                      "style": {
+                          "color": true
+                      },
+                      "data": {
+                          "type": null,
+                          "value": "維修單狀態",
+                          "target": null,
+                          "url": null
+                      },
+                      "id": 35
+                  },
+                  {
+                      "type": "row-info-group-table",
+                      "object_no": "be003",
+                      "style": {
+                          "width": [
+                              "170px",
+                              "100px",
+                              "120px",
+                              "150px",
+                              ""
+                          ]
+                      },
+                      "data": {
+                          "list_data": {
+                              "title": [
+                                  "預約日期",
+                                  "派工類別",
+                                  "完工日期",
+                                  "細項",
+                                  "補充"
+                              ],
+                              "column": [
+                                  {
+                                      "value": [
+                                          "2017-12-25 20:26:20",
+                                          "C 換機",
+                                          "2017/12/26",
+                                          "",
+                                          ""
+                                      ]
+                                  },
+                                  {
+                                      "value": [
+                                          "2015-04-22 18:11:24",
+                                          "C 換機",
+                                          "2015/07/07",
+                                          "",
+                                          ""
+                                      ]
+                                  },
+                                  {
+                                      "value": [
+                                          "2012-05-11 14:17:37",
+                                          "5 維修",
+                                          "2012/05/15",
+                                          "1 裝機",
+                                          ""
+                                      ]
+                                  },
+                                  {
+                                      "value": [
+                                          "2012-05-11 14:17:37",
+                                          "5 維修",
+                                          "2012/05/15",
+                                          "1 裝機",
+                                          ""
+                                      ]
+                                  },
+                                  {
+                                      "value": [
+                                          "2012-05-11 14:17:37",
+                                          "5 維修",
+                                          "2012/05/15",
+                                          "1 裝機",
+                                          "(5/16-5/31=16天-免費0天=$130)+(6/1-6/30=$244)=$374"
+                                      ]
+                                  },
+                                  {
+                                      "value": [
+                                          "2012-05-11 14:17:37",
+                                          "5 維修",
+                                          "2012/05/15",
+                                          "1 裝機",
+                                          ""
+                                      ]
+                                  }
+                              ]
+                          }
+                      },
+                      "id": 36
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 34,
+              "expand": false,
+              "col_span": 2,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "title-more",
+                      "object_no": "bf001",
+                      "style": {
+                          "color": true
+                      },
+                      "data": {
+                          "type": null,
+                          "value": "轉工程部申告紀錄",
+                          "target": null,
+                          "url": null
+                      },
+                      "id": 37
+                  },
+                  {
+                      "type": "row-info-group-table",
+                      "object_no": "bf003",
+                      "style": {
+                          "width": [
+                              "111px",
+                              "150px",
+                              "300px",
+                              "",
+                              "60px"
+                          ]
+                      },
+                      "data": {
+                          "list_data": {
+                              "title": [
+                                  "申告時間",
+                                  "原因",
+                                  "進件說明",
+                                  "備註",
+                                  "結案"
+                              ]
+                          }
+                      },
+                      "id": 38
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 35,
+              "expand": false,
+              "col_span": 2,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "title-more",
+                      "object_no": "bg001",
+                      "style": {
+                          "color": true
+                      },
+                      "data": {
+                          "type": null,
+                          "value": "歷史客訴紀錄",
+                          "target": null,
+                          "url": null
+                      },
+                      "id": 39
+                  },
+                  {
+                      "type": "row-info-group-table",
+                      "object_no": "bg003",
+                      "style": {
+                          "width": [
+                              "170px",
+                              "100px",
+                              "150px",
+                              "150px",
+                              "",
+                              ""
+                          ]
+                      },
+                      "data": {
+                          "list_data": {
+                              "title": [
+                                  "申告時間",
+                                  "服務別",
+                                  "申告類別",
+                                  "申告項目",
+                                  "申告補充",
+                                  "備註"
+                              ],
+                              "column": [
+                                  {
+                                      "value": [
+                                          "2024/03/28 16:41:23",
+                                          "2 CM",
+                                          "04.帳務作業",
+                                          "118 帳務問題",
+                                          "30 申請信用卡轉帳有效期限延長",
+                                          "女兒邱小姐申請信用卡有效期限延長到2031年02月"
+                                      ]
+                                  },
+                                  {
+                                      "value": [
+                                          "2022/03/30 10:20:00",
+                                          "2 CM",
+                                          "05.專案外撥",
+                                          "01.一般續約外撥",
+                                          "04.不願意續約",
+                                          "3/30一般04婉姿-0939758773女兒言自己為台灣大寬頻員工，已有d+.推原續25.客也不考慮續約，表示自己有需要會直接跟主管說，後續無須再去電通知續約"
+                                      ]
+                                  }
+                              ]
+                          }
+                      },
+                      "id": 40
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          }
+      ],
+      "notice": {}
+  }
+}

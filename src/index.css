@@ -1,0 +1,215 @@
+body {
+  @media screen and (min-width: 800px) {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}
+
+#root .MuiDataGrid-row.max-height .table-cell {
+  height: 88px
+}
+
+#root .MuiDataGrid-topContainer {
+  position: relative;
+  z-index: 0;
+  --unstable_DataGrid-radius: 0;
+}
+
+#root .MuiDataGrid-root {
+  border: none !important;
+}
+
+#root .table-header {
+  height: 38px !important;
+  padding: 0 10px;
+}
+
+#root .table-row {
+  --height: auto !important;
+  min-height: 50px !important;
+  max-height: inherit !important;
+}
+
+#root .table-row:hover {
+  background: none;
+}
+
+#root .table-headers {
+  background: #698195;
+  padding: 0 6px;
+}
+
+#root .table-headers > div[role='row'] {
+  background: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+#root .table-headers:hover .MuiDataGrid-columnSeparator {
+  visibility: hidden;
+}
+
+#root .table-content {
+  height: auto !important;
+}
+
+#root .table-render-zone {
+  position: static;
+}
+
+#root .table-render-zone .MuiDataGrid-cellEmpty {
+  display: none;
+}
+
+#root .table-cell {
+  position: relative;
+  border: none;
+  height: auto;
+  white-space: inherit;
+  --height: auto;
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  word-break: break-all;
+}
+
+#root .table-cell > span {
+  font-size: 14px;
+}
+
+#root .mui-style-hk6ikv-MuiDataGrid-root .MuiDataGrid-columnHeader:focus,
+#root .mui-style-hk6ikv-MuiDataGrid-root .MuiDataGrid-cell:focus {
+  outline: none;
+}
+
+body > .info-box {
+  content: attr(title);
+  display: flex;
+  width: 400px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  color: #fff;
+  border-radius: 16px;
+  background: #182c43;
+  box-shadow:
+    0px 4px 20px 0px rgba(0, 0, 0, 0.04),
+    0px 8px 10px 0px rgba(0, 0, 0, 0.08);
+  display: none;
+  white-space: normal;
+  line-height: 25px;
+}
+
+body > .info-box.visible {
+  display: block;
+}
+
+#root .table-cell > .find-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-size: contain;
+  border-radius: 24px;
+  background: url(@/assets/find.svg), rgba(69, 79, 91, 0.4);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.07);
+}
+
+#root .table-cell > .find-icon:hover + .info-box {
+  visibility: visible;
+}
+
+#root .table-cell-empty {
+  display: none;
+}
+
+#root .table-row:nth-child(even) {
+  background: #f4f5f7;
+}
+
+#root .table-header-title {
+  font-weight: 600;
+}
+
+.mansory-item {
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+#root .mansory-item-full {
+  padding: 18px;
+  position: absolute;
+}
+
+@media screen and (min-width: 800px) {
+  .mansory-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition:
+      opacity 0.4s 0.4s,
+      transform 0.4s;
+    padding: 10px;
+  }
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    32px 0 #fff,
+    -32px 0 #fff;
+  position: relative;
+  animation: flash 0.5s ease-out infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #fff2;
+    box-shadow:
+      32px 0 #fff2,
+      -32px 0 #f56920;
+  }
+  50% {
+    background-color: #f56920;
+    box-shadow:
+      32px 0 #fff2,
+      -32px 0 #fff2;
+  }
+  100% {
+    background-color: #fff2;
+    box-shadow:
+      32px 0 #f56920,
+      -32px 0 #fff2;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: WHITE;
+}
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 4px;
+}

@@ -1,0 +1,57 @@
+{
+  "object_no": "ab001",
+  "style": {
+      "internal_color": "#009E6F",
+      "external_color": "#AEF3CE",
+      "measure_button": true,
+      "percent": false,
+      "progress_bar": false
+  },
+  "status": "1",
+  "value": "正常",
+  "data": [
+      {
+          "type": "col-info",
+          "object_no": "aa005",
+          "style": {},
+          "data": {
+              "title": "Wi-Fi 2.4G狀態",
+              "value": "開啟",
+              "status": null
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "aa006",
+          "style": {},
+          "data": {
+              "title": "無線SSID 2.4G",
+              "value": "Testasas",
+              "status": null
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "aa007",
+          "style": {},
+          "data": {
+              "title": "Wi-Fi 5G狀態",
+              "value": "-",
+              "status": null
+          }
+      },
+      {
+          "type": "col-info",
+          "object_no": "aa008",
+          "style": {},
+          "data": {
+              "title": "無線SSID 5G",
+              "value": "-",
+              "status": null
+          }
+      }
+  ],
+  "suggestion": {
+      "list_data": {}
+  }
+}

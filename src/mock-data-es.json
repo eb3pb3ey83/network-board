@@ -1,0 +1,894 @@
+{
+  "company_name": "永佳樂",
+  "company_background_color": "#C7F4FE",
+  "company_font_color": "#212B36",
+  "layout_data": {
+      "has_float": false,
+      "float_box": {},
+      "frames": [
+          {
+              "id": 15,
+              "expand": false,
+              "col_span": 2,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "special-tag",
+                      "object_no": "ci001",
+                      "style": {},
+                      "data": {
+                          "list_data": [
+                              {
+                                  "title": "單一事件",
+                                  "value": null,
+                                  "status": null,
+                                  "url": null
+                              }
+                          ]
+                      },
+                      "id": 1
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 16,
+              "expand": false,
+              "col_span": 2,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "title-select",
+                      "object_no": "ca001",
+                      "style": {
+                          "color": true
+                      },
+                      "data": {
+                          "value": "用戶數據圖表",
+                          "select": {
+                              "traffic": "近14日用戶流量",
+                              "hfc": "近14日CM品質"
+                          },
+                          "url": null
+                      },
+                      "id": 2
+                  },
+                  {
+                      "type": "chart-info",
+                      "object_no": "ca002",
+                      "style": {},
+                      "data": {
+                          "traffic": [
+                              {
+                                  "us": "0.02",
+                                  "ds": "0.32",
+                                  "date": "09/08"
+                              },
+                              {
+                                  "us": "0.03",
+                                  "ds": "0.60",
+                                  "date": "09/09"
+                              },
+                              {
+                                  "us": "0.04",
+                                  "ds": "0.69",
+                                  "date": "09/10"
+                              },
+                              {
+                                  "us": "0.02",
+                                  "ds": "0.60",
+                                  "date": "09/11"
+                              },
+                              {
+                                  "us": "0.02",
+                                  "ds": "0.37",
+                                  "date": "09/12"
+                              },
+                              {
+                                  "us": "0.02",
+                                  "ds": "0.44",
+                                  "date": "09/13"
+                              },
+                              {
+                                  "us": "0.01",
+                                  "ds": "0.45",
+                                  "date": "09/14"
+                              },
+                              {
+                                  "us": "0.00",
+                                  "ds": "0.01",
+                                  "date": "09/15"
+                              },
+                              {
+                                  "us": "0.00",
+                                  "ds": "0.04",
+                                  "date": "09/16"
+                              },
+                              {
+                                  "us": "0.00",
+                                  "ds": "0.02",
+                                  "date": "09/17"
+                              },
+                              {
+                                  "us": "0.03",
+                                  "ds": "0.60",
+                                  "date": "09/18"
+                              },
+                              {
+                                  "us": "0.01",
+                                  "ds": "0.23",
+                                  "date": "09/19"
+                              },
+                              {
+                                  "us": "0.01",
+                                  "ds": "0.08",
+                                  "date": "09/20"
+                              },
+                              {
+                                  "us": "0.01",
+                                  "ds": "0.26",
+                                  "date": "09/21"
+                              }
+                          ],
+                          "hfc": {
+                              "date": [
+                                  "09/08",
+                                  "09/09",
+                                  "09/10",
+                                  "09/11",
+                                  "09/12",
+                                  "09/13",
+                                  "09/14",
+                                  "09/15",
+                                  "09/16",
+                                  "09/17",
+                                  "09/18",
+                                  "09/19",
+                                  "09/20",
+                                  "09/21"
+                              ],
+                              "data": [
+                                  "92.86",
+                                  "100.00",
+                                  "90.00",
+                                  "92.31",
+                                  "100.00",
+                                  "100.00",
+                                  "92.31",
+                                  "100.00",
+                                  "100.00",
+                                  "100.00",
+                                  "100.00",
+                                  "100.00",
+                                  "100.00",
+                                  "100.00"
+                              ]
+                          }
+                      },
+                      "id": 3
+                  }
+              ],
+              "footer": {
+                  "display": true,
+                  "object_no": "ca003",
+                  "style": {},
+                  "data": {
+                      "title": "歷史品質",
+                      "type": "link",
+                      "target": "_self",
+                      "value": "https://cniseng.kbro.tv/portal/cmts/cm_qos_graph.php?so=101&subsid=471301"
+                  }
+              }
+          },
+          {
+              "id": 17,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "title": "即時CM品質",
+                          "value": "",
+                          "status": 4
+                      },
+                      "type": "signal-info",
+                      "style": {
+                          "percent": false,
+                          "progress_bar": false,
+                          "external_color": "#E5E8EB",
+                          "internal_color": "#B0B9C2",
+                          "measure_button": true
+                      },
+                      "object_no": "cb001",
+                      "id": 4
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 5
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "cb002",
+                      "style": {
+                          "internal_color": "#009E6F",
+                          "external_color": "#AEF3CE",
+                          "measure_button": false,
+                          "percent": true,
+                          "progress_bar": true
+                      },
+                      "data": {
+                          "title": "昨日CM品質",
+                          "value": "100.00",
+                          "status": "1"
+                      },
+                      "id": 6
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 7
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "cb003",
+                      "style": {
+                          "internal_color": "#009E6F",
+                          "external_color": "#AEF3CE",
+                          "measure_button": false,
+                          "percent": true,
+                          "progress_bar": true
+                      },
+                      "data": {
+                          "title": "近7日CM品質",
+                          "value": "100.00",
+                          "status": "1"
+                      },
+                      "id": 8
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 9
+                  },
+                  {
+                      "data": {
+                          "value": "用戶流量(近一週)"
+                      },
+                      "type": "sub-title",
+                      "style": {
+                          "color": false
+                      },
+                      "object_no": "ba000",
+                      "id": 10
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "cb004",
+                      "style": {},
+                      "data": {
+                          "title": "上行超標數",
+                          "value": "超標0次",
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 11
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "cb005",
+                      "style": {},
+                      "data": {
+                          "title": "Session超標數",
+                          "value": "超標0次",
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 12
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 18,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "家戶Wi-Fi品質"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true
+                      },
+                      "object_no": "aa001",
+                      "id": 13
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "cc002",
+                      "style": {
+                          "internal_color": "#B0B9C2",
+                          "external_color": "#E5E8EB",
+                          "measure_button": false,
+                          "percent": false,
+                          "progress_bar": false
+                      },
+                      "data": {
+                          "title": "昨日家戶Wi-Fi品質",
+                          "value": "-",
+                          "status": 4
+                      },
+                      "id": 14
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 15
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "cc003",
+                      "style": {
+                          "internal_color": "#B0B9C2",
+                          "external_color": "#E5E8EB",
+                          "measure_button": false,
+                          "percent": false,
+                          "progress_bar": false
+                      },
+                      "data": {
+                          "title": "近一週家戶Wi-Fi品質",
+                          "value": "-",
+                          "status": 4
+                      },
+                      "id": 16
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 17
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "cc004",
+                      "style": {},
+                      "data": {
+                          "title": "Wi-Fi常用時段(週)",
+                          "value": "-",
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 18
+                  },
+                  {
+                      "data": {
+                          "value": "Mesh品質"
+                      },
+                      "type": "sub-title",
+                      "style": {
+                          "color": false
+                      },
+                      "object_no": "ba000",
+                      "id": 19
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "cc005",
+                      "style": {},
+                      "data": {
+                          "title": "不佳次數(昨日)",
+                          "value": "0次",
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 20
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "cc006",
+                      "style": {},
+                      "data": {
+                          "title": "連接方式(昨日)",
+                          "value": "-",
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 21
+                  },
+                  {
+                      "type": "search-block",
+                      "object_no": "cc007",
+                      "style": {},
+                      "data": {
+                          "title": "Wi-Fi裝置QoS查詢",
+                          "button": "查詢",
+                          "url": "https://cniseng.kbro.tv/portal/cmts/smarterkey_userurl.php?companyno=101&subsid=471301"
+                      },
+                      "id": 22
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 19,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "昨日RF品質標籤"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true
+                      },
+                      "object_no": "aa001",
+                      "id": 23
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "cd002",
+                      "style": {
+                          "display": false
+                      },
+                      "data": {
+                          "title": "Link",
+                          "value": ""
+                      },
+                      "id": 24
+                  },
+                  {
+                      "type": "advice-info",
+                      "object_no": "cd003",
+                      "style": {
+                          "font_color": "#00875E",
+                          "background_color": "#F0FFF7"
+                      },
+                      "data": {
+                          "title": "正常",
+                          "value": ""
+                      },
+                      "id": 25
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 20,
+              "expand": true,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "訂戶資訊"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true
+                      },
+                      "object_no": "aa001",
+                      "id": 26
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "ce002",
+                      "style": {},
+                      "data": {
+                          "title": "同戶服務",
+                          "value": "CATV/CM/DSTB/VAS",
+                          "separator": "/"
+                      },
+                      "id": 27
+                  },
+                  {
+                      "type": "col-info",
+                      "object_no": "ce003",
+                      "style": {},
+                      "data": {
+                          "title": "主週期項",
+                          "value": "220240 連線費24M/5M"
+                      },
+                      "id": 28
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 29
+                  },
+                  {
+                      "data": {
+                          "title": "CM設定檔"
+                      },
+                      "type": "col-info",
+                      "style": {},
+                      "object_no": "ce004",
+                      "id": 30
+                  },
+                  {
+                      "data": {
+                          "title": "建物類型"
+                      },
+                      "type": "col-info",
+                      "style": {},
+                      "object_no": "ce005",
+                      "id": 31
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 32
+                  },
+                  {
+                      "data": {
+                          "title": "Mesh-AP資訊"
+                      },
+                      "type": "col-info-2",
+                      "style": {},
+                      "object_no": "ce006",
+                      "id": 33
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 34
+                  },
+                  {
+                      "data": {
+                          "title": "設備型號"
+                      },
+                      "type": "col-info-2",
+                      "style": {},
+                      "object_no": "ce007",
+                      "id": 35
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 21,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "title-more",
+                      "object_no": "cf001",
+                      "style": {
+                          "color": true
+                      },
+                      "data": {
+                          "type": null,
+                          "value": "工單紀錄",
+                          "target": null,
+                          "url": null
+                      },
+                      "id": 36
+                  },
+                  {
+                      "type": "row-info-group",
+                      "object_no": "cf002",
+                      "style": {},
+                      "data": {
+                          "list_data": [
+                              {
+                                  "id": "cf002_0",
+                                  "createtime": "2017-12-25 20:26:20",
+                                  "item": "",
+                                  "content": [
+                                      {
+                                          "id": 0,
+                                          "title": "工單號碼",
+                                          "value": "A2017120016375",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 1,
+                                          "title": "工單類別",
+                                          "value": "C 換機",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 2,
+                                          "title": "受理時間",
+                                          "value": "2017-12-25 20:26:20",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 3,
+                                          "title": "完工日期",
+                                          "value": "2017/12/26",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 4,
+                                          "title": "補充",
+                                          "value": "",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 5,
+                                          "title": "工程人員",
+                                          "value": "YJL93022302 吳昆霖",
+                                          "status": null,
+                                          "url": null
+                                      }
+                                  ]
+                              },
+                              {
+                                  "id": "cf002_1",
+                                  "createtime": "2015-04-22 18:11:24",
+                                  "item": "",
+                                  "content": [
+                                      {
+                                          "id": 0,
+                                          "title": "工單號碼",
+                                          "value": "A2015040012777",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 1,
+                                          "title": "工單類別",
+                                          "value": "C 換機",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 2,
+                                          "title": "受理時間",
+                                          "value": "2015-04-22 18:11:24",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 3,
+                                          "title": "完工日期",
+                                          "value": "2015/07/07",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 4,
+                                          "title": "補充",
+                                          "value": "",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 5,
+                                          "title": "工程人員",
+                                          "value": "BE00024 邱莉婷",
+                                          "status": null,
+                                          "url": null
+                                      }
+                                  ]
+                              },
+                              {
+                                  "id": "cf002_2",
+                                  "createtime": "2012-05-11 14:17:37",
+                                  "item": "",
+                                  "content": [
+                                      {
+                                          "id": 0,
+                                          "title": "工單號碼",
+                                          "value": "A2012050005382",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 1,
+                                          "title": "工單類別",
+                                          "value": "5 維修",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 2,
+                                          "title": "受理時間",
+                                          "value": "2012-05-11 14:17:37",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 3,
+                                          "title": "完工日期",
+                                          "value": "2012/05/15",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 4,
+                                          "title": "補充",
+                                          "value": "",
+                                          "status": null,
+                                          "url": null
+                                      },
+                                      {
+                                          "id": 5,
+                                          "title": "工程人員",
+                                          "value": "BE00024 邱莉婷",
+                                          "status": null,
+                                          "url": null
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      "id": 37
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 22,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "title-more",
+                      "object_no": "cg001",
+                      "style": {
+                          "color": true
+                      },
+                      "data": {
+                          "type": null,
+                          "value": "申告紀錄",
+                          "target": null,
+                          "url": null
+                      },
+                      "id": 38
+                  },
+                  {
+                      "type": "row-info",
+                      "object_no": "cg002",
+                      "style": {},
+                      "data": {
+                          "list_data": [
+                              {
+                                  "createtime": "2024-04-25 19:45:15",
+                                  "item": "E 去電",
+                                  "content": "0425-1939 24M升頻續約客言不需要"
+                              },
+                              {
+                                  "createtime": "2024-03-28 16:41:24",
+                                  "item": "118 帳務問題",
+                                  "content": "女兒邱小姐申請信用卡有效期限延長到2031年02月;"
+                              },
+                              {
+                                  "createtime": "2017-12-25 20:26:06",
+                                  "item": "070 換機",
+                                  "content": "230010 (借)寬頻數據機設備,"
+                              }
+                          ]
+                      },
+                      "id": 39
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 23,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "title-more",
+                      "object_no": "ch001",
+                      "style": {
+                          "color": true
+                      },
+                      "data": {
+                          "type": null,
+                          "value": "客訴紀錄",
+                          "target": null,
+                          "url": null
+                      },
+                      "id": 40
+                  },
+                  {
+                      "type": "row-info",
+                      "object_no": "ch002",
+                      "style": {},
+                      "data": {
+                          "list_data": [
+                              {
+                                  "createtime": "2024/03/28 16:41:23",
+                                  "item": "04.帳務作業",
+                                  "content": "女兒邱小姐申請信用卡有效期限延長到2031年02月"
+                              },
+                              {
+                                  "createtime": "2022/03/30 10:20:00",
+                                  "item": "05.專案外撥",
+                                  "content": "3/30一般04婉姿-0939758773女兒言自己為台灣大寬頻員工，已有d+.推原續25.客也不考慮續約，表示自己有需要會直接跟主管說，後續無須再去電通知續約"
+                              }
+                          ]
+                      },
+                      "id": 41
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          }
+      ],
+      "notice": {}
+  }
+}

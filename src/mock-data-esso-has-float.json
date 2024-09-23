@@ -1,0 +1,400 @@
+{
+  "company_name": "永佳樂",
+  "company_background_color": "#C7F4FE",
+  "company_font_color": "#212B36",
+  "layout_data": {
+      "has_float": false,
+      "float_box": {},
+      "frames": [
+          {
+              "id": 36,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "type": "signal-info",
+                      "object_no": "db001",
+                      "style": {
+                          "internal_color": "#009E6F",
+                          "external_color": "#AEF3CE",
+                          "measure_button": false,
+                          "percent": true,
+                          "progress_bar": true
+                      },
+                      "data": {
+                          "title": "昨日CM品質",
+                          "value": "97.15",
+                          "status": "1"
+                      },
+                      "id": 1
+                  },
+                  {
+                      "data": {},
+                      "type": "line",
+                      "style": {},
+                      "object_no": "aa000",
+                      "id": 2
+                  },
+                  {
+                      "type": "signal-info",
+                      "object_no": "db002",
+                      "style": {
+                          "internal_color": "#009E6F",
+                          "external_color": "#AEF3CE",
+                          "measure_button": false,
+                          "percent": true,
+                          "progress_bar": true
+                      },
+                      "data": {
+                          "title": "近7日CM品質",
+                          "value": "96.82",
+                          "status": "1"
+                      },
+                      "id": 3
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 37,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "高頻寬客戶"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true,
+                          "download_button": true
+                      },
+                      "object_no": "aa001",
+                      "id": 4
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "de002",
+                      "style": {},
+                      "data": {
+                          "title": "New-AQ(30天內)",
+                          "sub_title": "高頻寬客戶-New-AQ(30天內)",
+                          "value": "3",
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/cti_bb_newAQ_500m_7d_2?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 5
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "de003",
+                      "style": {},
+                      "data": {
+                          "title": "重複客訴(30天內)",
+                          "sub_title": "高頻寬客戶-重複客訴(30天內)",
+                          "value": "17",
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/cti_bb_30d_500m_7d_2?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 6
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "de004",
+                      "style": {},
+                      "data": {
+                          "title": "HFC健康度不佳",
+                          "sub_title": "高頻寬客戶-HFC健康度不佳",
+                          "value": 784,
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/HFC_500m?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 7
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "de005",
+                      "style": {},
+                      "data": {
+                          "title": "家戶Wi-Fi品質(週)不佳",
+                          "sub_title": "高頻寬客戶-家戶Wi-Fi品質(週)不佳",
+                          "value": 9815,
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/500M_weekly_wifi_quality?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 8
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 38,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "異常用戶"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true,
+                          "download_button": true
+                      },
+                      "object_no": "aa001",
+                      "id": 9
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "df002",
+                      "style": {},
+                      "data": {
+                          "title": "IP攻擊(上週)",
+                          "sub_title": "異常用戶-IP攻擊(上週)",
+                          "value": 1,
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/so_alert_ip?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 10
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "df003",
+                      "style": {
+                          "display": false
+                      },
+                      "data": {
+                          "title": "上行重度用戶",
+                          "sub_title": "異常用戶-上行重度用戶",
+                          "value": 0,
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 11
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "df004",
+                      "style": {},
+                      "data": {
+                          "title": "應用服務客訴(單一/網速)",
+                          "sub_title": "異常用戶-應用服務客訴(單一/網速)",
+                          "value": "2",
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/cti020_cs_speed?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 12
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "df005",
+                      "style": {
+                          "display": false
+                      },
+                      "data": {
+                          "title": "NCC資安戶(SPAM)",
+                          "sub_title": "異常用戶-NCC資安戶(SPAM)",
+                          "value": 0,
+                          "status": "4",
+                          "url": null
+                      },
+                      "id": 13
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "df006",
+                      "style": {},
+                      "data": {
+                          "title": "NCC資安戶",
+                          "sub_title": "異常用戶-NCC資安戶",
+                          "value": "163",
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/security_spam_history_1?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 14
+                  },
+                  {
+                      "type": "search-block",
+                      "object_no": "df007",
+                      "style": {},
+                      "data": {
+                          "title": "聯外路由",
+                          "button": "查看",
+                          "url": "https://cniseng.kbro.tv/portal/qos/internet/internet_dashboard.php"
+                      },
+                      "id": 15
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 39,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "上行流量"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true,
+                          "download_button": true
+                      },
+                      "object_no": "aa001",
+                      "id": 16
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "dc002",
+                      "style": {},
+                      "data": {
+                          "title": "昨日流量壅塞(US)",
+                          "sub_title": "上行流量-昨日流量壅塞(US)",
+                          "value": "69",
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/cmts_if_group_flow_daily_wideband?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 17
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "dc003",
+                      "style": {},
+                      "data": {
+                          "title": "上週尖峰時段壅塞(US)",
+                          "sub_title": "上行流量-上週尖峰時段壅塞(US)",
+                          "value": "0",
+                          "status": null,
+                          "url": null
+                      },
+                      "id": 18
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          },
+          {
+              "id": 40,
+              "expand": false,
+              "col_span": 1,
+              "open_num": 1,
+              "show_num": 6,
+              "header": {
+                  "display": false
+              },
+              "content_box": [
+                  {
+                      "data": {
+                          "value": "客端客訴"
+                      },
+                      "type": "title",
+                      "style": {
+                          "color": true,
+                          "download_button": true
+                      },
+                      "object_no": "aa001",
+                      "id": 19
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "dd002",
+                      "style": {},
+                      "data": {
+                          "title": "New-AQ(30天內)",
+                          "sub_title": "客端客訴-New-AQ(30天內)",
+                          "value": "9",
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/cti_bb_newAQ_500m_7d_1?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 20
+                  },
+                  {
+                      "type": "file-info",
+                      "object_no": "dd003",
+                      "style": {},
+                      "data": {
+                          "title": "重複客訴(30天內)",
+                          "sub_title": "客端客訴-重複客訴(30天內)",
+                          "value": "36",
+                          "status": null,
+                          "url": {
+                              "type": "link",
+                              "target": "_blank",
+                              "value": "/api/v4/101/471301/esso/export/cti_bb_30d_500m_7d_1?token=13daa88c19d3c1e0059023957fc25133"
+                          }
+                      },
+                      "id": 21
+                  }
+              ],
+              "footer": {
+                  "display": false
+              }
+          }
+      ],
+      "notice": {}
+  }
+}

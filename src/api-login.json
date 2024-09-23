@@ -1,0 +1,6 @@
+{
+  "ver": "v3",
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VhdC1rYnJvLmNsb3VkLWludGVyYWN0aXZlLmNvbS9hcGkvbG9naW4iLCJpYXQiOjE3MjY5OTE1NTUsImV4cCI6MTcyNjk5NTE1NSwibmJmIjoxNzI2OTkxNTU1LCJqdGkiOiI4YjRlTndaRFg3QTRKV0pHIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.tk-8lAaDTZo_SUim4ghZ_XUkNN7pxDTXbvS4b1z2ElE",
+  "token_type": "bearer",
+  "expires_in": 3600
+}

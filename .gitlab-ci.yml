@@ -1,0 +1,106 @@
+stages:
+  - check
+  - build
+  - deploy
+
+.job_check_uat:
+  stage: check
+  script:
+    - whoami
+    - id
+    - df -h | grep -E "(ubuntu--vg-ubuntu--lv|Filesystem)"
+    - export PROJECT_PWD=$(pwd)
+    - DEPS_IMAGE_EXISTS=$(curl -s -u cloud:7=EdUKxUfMg3Tu! https://dockerhub.cloud-interactive.com/v2/_catalog | grep -q "kbro-deps-${ENV}" && echo "true" || echo "false")
+    - |
+      ([ "$DEPS_IMAGE_EXISTS" == "false" ] || [ "$(git diff --name-only HEAD^ HEAD | grep -c -E ".gitlab-ci.yml|devops-trigger.txt|package.json|vite.config.ts")" -gt 0 ]) || exit 0
+      (cd /home/gitlab-runner/pj-devops ; git fetch ; git checkout origin/master -f) && \
+      (cd $PROJECT_PWD) && \
+      (cp /home/gitlab-runner/pj-devops/kbro/${ENV}/Dockerfile.deps Dockerfile.deps) && \
+      (docker build -t dockerhub.cloud-interactive.com/kbro-deps-${ENV}:latest -f Dockerfile.deps --no-cache . ) && \
+      (docker logout && docker login dockerhub.cloud-interactive.com -u cloud -p 7=EdUKxUfMg3Tu!) && \
+      (docker push dockerhub.cloud-interactive.com/kbro-deps-${ENV}:latest) && \
+      (echo "---------------- build kbro-deps-${ENV} image ----------------")
+
+
+.job_build_uat:
+  stage: build
+  script:
+    - id
+    - df -h | grep -E "(ubuntu--vg-ubuntu--lv|Filesystem)"
+    - set -x
+    - export PROJECT_PWD=$(pwd)
+    - cd /home/gitlab-runner/ci-vault ; git fetch ; git checkout origin/master -f ;
+    - cd /home/gitlab-runner/pj-devops ; git fetch ; git checkout origin/master -f ;
+    - cd /home/gitlab-runner/devoops ; git fetch ; git checkout origin/master -f ;
+    - cd $PROJECT_PWD
+    - cp /home/gitlab-runner/ci-vault/env/kbro/fe-web/.env.uat .env
+    - cp /home/gitlab-runner/pj-devops/kbro/${ENV}/Dockerfile.web Dockerfile.web
+    - sed -i "s|../../backend/public|./dist|g" vite.config.ts
+    - docker logout
+    - docker login dockerhub.cloud-interactive.com -u cloud -p 7=EdUKxUfMg3Tu!
+    - docker rm -f kbro-build || true
+    - docker build -f ./Dockerfile.web -t kbro-build --no-cache .
+    - docker run -d --name kbro-build kbro-build
+    - docker cp kbro-build:/app/dist/kbro-web-uat.zip ./kbro-web-uat.zip
+    - docker rm -f kbro-build
+    - chmod 600 /home/gitlab-runner/ci-vault/ssh/devops
+    - scp -o StrictHostKeyChecking=no "/home/gitlab-runner/ci-vault/ssh/devops" /$PROJECT_PWD/kbro-web-uat.zip pj-kbro-vpn:~/kbro && rm /$PROJECT_PWD/kbro-web-uat.zip
+    - chmod 600 /home/gitlab-runner/ci-vault/ssh/devops
+    - ssh -o StrictHostKeyChecking=no -i "/home/gitlab-runner/ci-vault/ssh/devops" pj-kbro-vpn 'scp -o StrictHostKeyChecking=no -o GSSAPIAuthentication=no -i /home/cloud/.ssh/kbro_uat ~/kbro/kbro-web-uat.zip dashboard.it@10.123.20.130:/home/dashboard.it/uat/frontend/'
+
+
+.job_deploy_uat:
+  stage: deploy
+  script:
+    - id
+    - df -h | grep -E "(ubuntu--vg-ubuntu--lv|Filesystem)"
+    - set -x
+    - chmod 600 /home/gitlab-runner/ci-vault/ssh/devops
+    - |
+      ssh -o StrictHostKeyChecking=no -i "/home/gitlab-runner/ci-vault/ssh/devops" pj-kbro-vpn "ssh -o StrictHostKeyChecking=no -o GSSAPIAuthentication=no -i /home/cloud/.ssh/kbro_uat dashboard.it@10.123.20.130 -T '
+            cd ~/uat/frontend/ &&
+            sudo rm -r ./kbro-web-uat || true ;
+            sudo rm -r /var/www/Dashboard/frontend || true ;
+            sudo mkdir -p /var/www/Dashboard/frontend &&
+            sudo unzip ./kbro-web-uat.zip -d /var/www/Dashboard/frontend &&
+            cd /var/www/Dashboard &&
+            sudo chown -R apache:apache /var/www/Dashboard/frontend/ &&
+            echo "================ unzip success ================" &&
+            sudo systemctl restart httpd &&
+            echo "================ Deploying pj-kbro-${ENV} web application done... ================"
+          '"
+      
+
+uat_check:
+  extends: .job_check_uat
+  environment:
+    name: uat
+  variables:
+    ENV: uat
+  only:
+    - master
+  tags:
+    - apollo-shell
+
+uat_build:
+  extends: .job_build_uat
+  environment:
+    name: uat
+  variables:
+    ENV: uat
+  only:
+    - master
+  tags:
+    - apollo-shell
+
+uat_deploy:
+  extends: .job_deploy_uat
+  environment:
+    name: uat
+  variables:
+    ENV: uat
+  only:
+    - master
+  tags:
+    - apollo-shell
+
