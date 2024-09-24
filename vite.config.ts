@@ -15,9 +15,6 @@ export default defineConfig({
   resolve: {
     alias: [{ find: '@', replacement: '/src' }],
   },
-  build: {
-    outDir: '../../backend/public',
-  },
   server: {
     port: 3000,
   },
