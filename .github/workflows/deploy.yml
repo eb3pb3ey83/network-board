@@ -23,6 +23,7 @@ jobs:
         with:
           context: .
           push: true
+          file: ./Dockerfile
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/network-dashboard # 使用你的 Docker Hub 使用者名稱和應用程式名稱
       - name: 更新 known_hosts 文件 # 步驟的名稱
         run: | # 將要執行的命令
