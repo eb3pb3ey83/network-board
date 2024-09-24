@@ -34,6 +34,6 @@ jobs:
         run: |
           ssh root@${{ secrets.HOST_NAME }} '
             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/network-dashboard
-            docker rm -f github-ac-sample || true
-            docker run -d -p 80:3000 --name github-ac-sample --env-file $HOME/websample/node-env/.env ${{ secrets.DOCKER_HUB_USERNAME }}/network-dashboard
+            docker rm -f network-dashboard || true
+            docker run -d -p 80:3000 --name network-dashboard ${{ secrets.DOCKER_HUB_USERNAME }}/network-dashboard
           '
