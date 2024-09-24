@@ -18,13 +18,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-      # - name: Build and push Docker image
-      #   uses: docker/build-push-action@v2
-      #   with:
-      #     context: .
-      #     push: true
-      #     file: ./Dockerfile
-      #     tags: ${{ secrets.DOCKER_HUB_USERNAME }}/network-dashboard # 使用你的 Docker Hub 使用者名稱和應用程式名稱
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          file: ./Dockerfile
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/network-dashboard # 使用你的 Docker Hub 使用者名稱和應用程式名稱
       - name: 更新 known_hosts 文件 # 步驟的名稱
         run: | # 將要執行的命令
           mkdir -p ~/.ssh  
