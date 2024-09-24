@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { CsvDownloadBox, CsvDownloadLink, CsvDownloadButtonWrapper, CsvDownloadStatus, CsvDownloadTitle, CsvDownloadUnit } from './style';
-import { ReactComponent as DownloadSvg } from '@/assets/download.svg';
+import { CsvDownloadBox, CsvDownloadStatus, CsvDownloadTitle, CsvDownloadUnit } from './style';
+// import { ReactComponent as DownloadSvg } from '@/assets/download.svg';
 import { useFileDownloadQuery } from '@/state/api/fileDownload';
 import { BillRecvClass } from '@/model/dashboard.model';
 
@@ -14,7 +14,7 @@ interface Props {
   subTitle?: string;
 }
 
-export const CsvDownload = ({ title, value, unit, status, url, subTitle }: Props) => {
+export const CsvDownload = ({ title, value, unit, status, subTitle }: Props) => {
   const [link, setLink] = useState('');
   const { isSuccess } = useFileDownloadQuery({ url: link, title: subTitle }, { skip: !link, refetchOnMountOrArgChange: true });
   const isNumber = !Number.isNaN(Number(value));
@@ -32,13 +32,13 @@ export const CsvDownload = ({ title, value, unit, status, url, subTitle }: Props
         {/* {value === '' && <CsvDownloadEmpty></CsvDownloadEmpty>} */}
       </CsvDownloadStatus>
 
-      {value !== '' && !!url && (
+      {/* {value !== '' && !!url && (
         <CsvDownloadButtonWrapper>
           <CsvDownloadLink onClick={() => url && setLink(url.value)}>
             <DownloadSvg />
           </CsvDownloadLink>
         </CsvDownloadButtonWrapper>
-      )}
+      )} */}
     </CsvDownloadBox>
   );
 };

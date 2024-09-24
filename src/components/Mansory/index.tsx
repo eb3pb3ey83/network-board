@@ -36,7 +36,7 @@ const getContainerPadding = (hasFloat: boolean, fullScreen: boolean) => {
   } else if (!hasFloat && fullScreen) {
     return { xs: 0, sm: 0, md: '18px 18px 0 18px' };
   } else {
-    return { xs: 0, sm: 0, md: '10px 0 0 0' };
+    return { xs: 0, sm: 0, md: '0' };
   }
 };
 
@@ -45,6 +45,7 @@ const getSpanStyle = (column: number) =>
     { length: column },
     (_, index) => `
     .masonry-item-span${index + 1} {
+      background-color: #fffdfb;
       width: ${(100 / column) * (index + 1)}%
     }
   `,

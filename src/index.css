@@ -1,3 +1,6 @@
+#root {
+  background-color: #fffdfb;
+}
 body {
   @media screen and (min-width: 800px) {
     overflow-y: hidden;
@@ -6,7 +9,7 @@ body {
 }
 
 #root .MuiDataGrid-row.max-height .table-cell {
-  height: 88px
+  height: 88px;
 }
 
 #root .MuiDataGrid-topContainer {

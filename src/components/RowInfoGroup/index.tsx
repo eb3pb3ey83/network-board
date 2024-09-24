@@ -36,12 +36,14 @@ const RowInfoGroup = ({ data, openNum, showNum, objectNo }: Props) => {
   const isOpen = openState[objectNo];
   const dispatch = useDispatch();
   const isPageInitialize = useSelector(selectIsPageInitialize);
+  const maxRow = 3;
 
   return data.length ? (
     <>
       <Box sx={{ padding: '0 16px 16px 16px' }}>
         {data.map((item, index) => {
-          if (!isOpen && index >= showNum) return;
+          if (!isOpen && index >= maxRow) return;
+          if (isOpen && index > Number(showNum) - 1) return;
           return (
             <Accordion shouldOpenInStart={!isPageInitialize && openNum - 1 === index} index={item.id} key={index} title={item.createtime}>
               {item.content.map((con, idx) => (
@@ -53,7 +55,7 @@ const RowInfoGroup = ({ data, openNum, showNum, objectNo }: Props) => {
           );
         })}
       </Box>
-      {data.length - 1 > showNum && (
+      {data.length - 1 >= maxRow && (
         <ToggleButton isOpen={isOpen} onClick={() => dispatch(setAccordationGroup({ isOpen: !isOpen, objectNo }))}>
           <Box>{isOpen ? '顯示較少' : '顯示更多'}</Box>
           <ArrowSvg />

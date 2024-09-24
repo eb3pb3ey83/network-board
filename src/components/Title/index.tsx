@@ -17,7 +17,7 @@ interface Props {
   icon?: string;
 }
 
-export const Title = ({ hasPaddingTop, download_all_url, sx, name, prefix, suffix, smallText, onMoreBtnClick, hasFlag = true, icon }: Props) => {
+export const Title = ({ hasPaddingTop, sx, name, prefix, suffix, smallText, onMoreBtnClick, hasFlag = true, icon }: Props) => {
   const [link, setLink] = useState('');
   const { isSuccess } = useAllFileDownloadQuery({ url: link, title: name }, { skip: !link, refetchOnMountOrArgChange: true });
 
@@ -37,11 +37,11 @@ export const Title = ({ hasPaddingTop, download_all_url, sx, name, prefix, suffi
           查看更多
         </Button>
       )}
-      {download_all_url && (
+      {/* {download_all_url && (
         <Button sx={{ height: '30px' }} onClick={() => setLink(download_all_url)}>
           下載全部
         </Button>
-      )}
+      )} */}
     </TitleDiv>
   );
 };

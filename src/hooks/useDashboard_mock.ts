@@ -1,4 +1,3 @@
-import mockData from '@/mock-data-cti-has-float.json';
 // import { useGetDataMutation } from '@/state/api/dashboard';
 import useUserInfo from './useUserInfo';
 import { useEffect, useRef } from 'react';
@@ -10,7 +9,7 @@ import { Data } from '@/model/dashboard.model';
 const getFakeData = () =>
   new Promise((resolve) => {
     setTimeout(function () {
-      resolve(mockData); // Yay！非常順利！
+      resolve({}); // Yay！非常順利！
     }, 250);
   });
 
